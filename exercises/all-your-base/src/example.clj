@@ -1,4 +1,4 @@
-(ns all-your-base)
+(ns example)
 
 (defn- digits->decimal
   "Converts a sequence of digits given in input-base into decimal format."
