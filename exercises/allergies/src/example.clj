@@ -1,4 +1,4 @@
-(ns allergies)
+(ns example)
 
 (def ^:private allergens
   [:eggs :peanuts :shellfish :strawberries :tomatoes :chocolate :pollen :cats])
