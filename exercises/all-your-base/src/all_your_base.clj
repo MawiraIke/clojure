@@ -9,15 +9,17 @@
       acc
       (recur (inc x) base loop-t (* acc base)))))
 
-
 (defn convert [base number]
   (loop [len (.length number)
          x 0
          acc 0]
     (if (= x len)
       acc
-      (recur
-        len
-        (+ x 1)
-        (+ acc (* (int (get number x)) (b-multiplier base (- len x 1))))))))
-; TODO Continue here (int char) is wrong
+      (do
+        (print (str (get number x) " * " base "^" (- len x 1) " + "))
+        ; Work out the math
+        (recur
+          len
+          (+ x 1)
+          (+ acc (* (get number x) (b-multiplier base (- len x 1)))))
+        ))))
