@@ -1,17 +1,17 @@
 (ns bank-account)
 
-(defn open-account [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(def acct (atom {:name "" :balance 0}))
 
-(defn close-account [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(def acc (atom nil))
 
-(defn get-balance [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn open-account []
+  (reset! acc acct))
 
-(defn update-balance [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn close-account [account]
+  (reset! account account))
+
+(defn get-balance [account]
+  (get @account :balance))
+
+(defn update-balance [account sum]
+  (reset! account (assoc @account :balance (+ (get-balance account) sum))))
