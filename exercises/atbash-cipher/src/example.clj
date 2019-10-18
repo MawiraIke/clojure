@@ -1,4 +1,4 @@
-(ns atbash-cipher
+(ns example
   (:require [clojure.string :as str]))
 
 (def ^:private letters
