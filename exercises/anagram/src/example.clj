@@ -1,4 +1,4 @@
-(ns anagram
+(ns example
   (:require [clojure.string :refer [lower-case]]))
 
 (defn- anagram? [w c]
