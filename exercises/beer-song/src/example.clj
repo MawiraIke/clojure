@@ -1,4 +1,4 @@
-(ns beer-song
+(ns example
   (:require [clojure.string :as str]))
 
 (defn many [n] (format "%d bottles of beer on the wall, %d bottles of beer.\nTake one down and pass it around, %d bottles of beer on the wall.\n" n n (dec n)))
