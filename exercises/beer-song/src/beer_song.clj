@@ -10,11 +10,11 @@
 
 (defn pn0 [n]
   "Returns a paragraph of a song"
-  (format "%d bottles of beer on the wall, %d bottles of beer.\nTake one down and pass it around, no more bottles of beer on the wall.\n" n n))
+  (format "%d bottle of beer on the wall, %d bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n" n n))
 
 (defn pn-0 [n]
   "Returns a paragraph of a song"
-  "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.")
+  "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n")
 
 
 (defn verse
