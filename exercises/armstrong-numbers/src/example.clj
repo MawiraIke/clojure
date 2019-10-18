@@ -1,4 +1,4 @@
-(ns armstrong-numbers)
+(ns example)
 
 (defn expt [base pow]
   (reduce * 1 (repeat pow base)))
