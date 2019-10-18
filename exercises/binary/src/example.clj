@@ -1,4 +1,4 @@
-(ns binary)
+(ns example)
 
 (defn- pow [x n]
   (loop [x (bigint x) n (bigint n) r 1]
