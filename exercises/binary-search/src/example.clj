@@ -1,4 +1,4 @@
-(ns binary-search)
+(ns example)
 
 (defn middle [alist]
   (-> alist (count) (quot 2)))
