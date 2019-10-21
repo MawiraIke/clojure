@@ -1,4 +1,4 @@
-(ns bob
+(ns example
   (:require [clojure.string :as str]))
 
 (defn- silence?    [msg] (str/blank? msg))
