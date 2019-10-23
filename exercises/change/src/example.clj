@@ -1,4 +1,4 @@
-(ns change)
+(ns example)
 
 (defn issue [sum coins]
   (when (or (neg? sum) (and (pos? sum) (every? #(< sum %) coins)))

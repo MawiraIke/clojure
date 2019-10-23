@@ -6,6 +6,8 @@
 (defn singleton [n] [n nil nil])
 
 (defn insert [v node]
+  "Insert a value into a node. Receives the value and
+  node as arguments."
   (if
     (empty? node)
     (singleton v)
@@ -15,7 +17,7 @@
         [x (insert v (left node)) (right node)]
         [x (left node) (insert v (right node))]))))
 
-(defn from-list [xs]                                          ;; <- arglist goes here
+(defn from-list [xs]
   (reduce #(insert %2 %1) nil xs))
 
 (defn to-list [node]
