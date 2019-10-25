@@ -1,4 +1,4 @@
-(ns collatz-conjecture)
+(ns example)
 
 (defn collatz-helper [n]
   (cond (= 1 n)   1
