@@ -1,4 +1,4 @@
-(ns clock)
+(ns example)
 
 (defn clock
   "Return a 24 hour clock representation of the given hours and minutes."
