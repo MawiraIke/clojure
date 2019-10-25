@@ -13,6 +13,7 @@
       (recur (nthnext sq 2)))))
 
 (defn allergies [score]
+  {:pre [(not= score 0)]}
   (let [mapl (atom {:eggs     0 :peanuts 0 :shellfish 0 :strawberries 0
                     :tomatoes 0 :chocolate 0 :pollen 0 :cats 0})]
     (loop [x score
@@ -24,4 +25,9 @@
         @mapl))))
 
 (defn allergic-to? [score alerg]
-  )
+  (loop [sq (allergies score)]
+    (if (> (count sq) 2)
+      (if (and (= (key (first sq)) alerg) (> (val (first sq)) 0))
+        true
+        (recur (next sq)))
+      false)))
