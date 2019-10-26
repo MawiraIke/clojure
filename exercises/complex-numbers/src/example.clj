@@ -1,4 +1,4 @@
-(ns complex-numbers)
+(ns example)
 
 (defn real [[a _]] a)
 
