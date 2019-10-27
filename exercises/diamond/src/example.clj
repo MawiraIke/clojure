@@ -1,4 +1,4 @@
-(ns diamond)
+(ns example)
 
 (def alphabet (map char (range (int \A) (inc (int \Z)))))
 
