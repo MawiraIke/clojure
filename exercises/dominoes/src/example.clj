@@ -1,4 +1,4 @@
-(ns dominoes)
+(ns example)
 
 (defn rm [xs x]
   (let [i (.indexOf xs x)]
